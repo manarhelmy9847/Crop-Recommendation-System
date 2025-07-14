@@ -1,37 +1,34 @@
-# 🧠 CT Scan Diagnosis Using Deep Learning
+# 🌾 Crop Recommendation System
 
-This project uses deep learning to analyze CT scan images for medical diagnosis. It leverages convolutional neural networks (CNNs) to detect abnormalities such as tumors, infections, or COVID-related lung conditions in chest CT scans.
-
----
-
-## 🧬 Overview
-CT scans provide detailed images of internal body structures. This project aims to automate the diagnostic process using image classification models trained on medical imaging datasets, enhancing early detection and reducing workload on radiologists.
+This project uses machine learning to recommend the most suitable crop to grow based on soil and climate conditions. It helps farmers make data-driven decisions by analyzing features like nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall.
 
 ---
 
-## ✅ Features
-- Preprocessing of CT scan images (resize, normalize, augmentation)
-- Deep learning model (CNN-based classifier)
-- Binary or multi-class classification (e.g., normal vs. abnormal)
-- Evaluation metrics (accuracy, precision, recall, confusion matrix)
-- Optional deployment as a web-based diagnostic assistant
+## 🧠 Overview
+
+The goal of this project is to classify crop types and suggest the most appropriate crop to cultivate, using a machine learning classifier trained on agricultural data.
+
+The model takes in various features such as:
+- Soil Nutrients: `N`, `P`, `K`
+- Environmental Factors: `Temperature`, `Humidity`, `pH`, `Rainfall`
 
 ---
 
 ## 📂 Dataset
-- Source: [e.g., Kaggle - CT Scans of COVID/Normal Patients](https://www.kaggle.com/)
-- Image format: JPG / PNG  
-- Labels: Normal, COVID, Tumor, etc.  
-- Split: Training / Validation / Test sets
+
+- **Source**: [Kaggle - Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+- **Samples**: 2,200+
+- **Features**: 7 input features
+- **Target**: Crop label (`rice`, `maize`, `mungbean`, ...)
 
 ---
 
 ## 🛠️ Technologies Used
-- Python  
-- TensorFlow / Keras or PyTorch  
-- OpenCV / PIL for image handling  
-- Matplotlib / Seaborn for visualization  
-- Jupyter Notebook  
-- [Optional] Streamlit / Flask for deployment
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Seaborn & Matplotlib
+- Jupyter Notebook
 
 ---
